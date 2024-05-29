@@ -1,36 +1,40 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #000;
-    border-radius: 12px;
-    padding: 12px;
-    max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 12px;
+  max-width: 100%;
+  gap: 8px;
 }
 
 .button {
-    padding: 8px;
-    font-size: 20px;
-    border: 2px solid #666666;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 8px;
+  font-size: 20px;
+  border: 2px solid #666666;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.button:hover, .button:focus, .button:active {
-    border: 2px solid #858585;
-    background-color: #c4c4c4;
+.button:hover,
+.button:focus,
+.button:active {
+  color: #fff;
+  background-color: #17009b;
+  border-color: #17009b;
 }
 
 .text {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .textContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }

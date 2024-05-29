@@ -25,6 +25,10 @@
   margin-top: 16px;
 }
 
+.label:nth-child(5) {
+  margin-top: 16px;
+}
+
 .submitButton {
   max-width: 120px;
   margin-left: auto;
@@ -42,11 +46,4 @@
   color: #fff;
   background-color: #17009b;
   border-color: #17009b;
-}
-
-.error {
-  font-size: 12px;
-  color: red;
-  margin-top: 4px;
-  margin-bottom: 16px;
 }

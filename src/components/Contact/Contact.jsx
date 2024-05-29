@@ -2,16 +2,11 @@ import css from "./Contact.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-// import { deleteContact } from "../../redux/contactsSlice";
-import { deleteContact } from "../../redux/contactsOps";
+import { deleteContact } from "../../redux/contacts/operations";
+import toast from "react-hot-toast";
 
 export default function Contact({ contact }) {
   const dispatch = useDispatch();
-
-  // const {
-  //   newContact: { name, number },
-  //   id,
-  // } = contact;
 
   const { name, number, id } = contact;
 
@@ -29,7 +24,13 @@ export default function Contact({ contact }) {
       </div>
       <button
         className={css.button}
-        onClick={() => dispatch(deleteContact(id))}
+        onClick={() =>
+          dispatch(deleteContact(id))
+            .unwrap()
+            .then(() => {
+              toast.success("Deleted!");
+            })
+        }
       >
         Delete
       </button>

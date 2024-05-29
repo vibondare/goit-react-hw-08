@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 20px;
+  color: #555555;
+}
+
+.navLinkIsActive {
+  color: #17009b;
+}

@@ -1,0 +1,23 @@
+.title {
+    font-size: 40px;
+}
+
+.text {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #6c6c6c;
+  color: #353535;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 640px;
+  max-width: 100%;
+}
+
+.listItem {
+    font-size: 20px;
+}
